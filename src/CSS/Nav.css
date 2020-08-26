@@ -1,0 +1,19 @@
+.headingTitle{
+    text-align: center;
+}
+
+.headingDiv{
+    text-align:center;
+    background-color:skyblue;
+}
+
+.navDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.navItem{
+    margin: 20px;
+}
