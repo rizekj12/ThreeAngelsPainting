@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import '../CSS/Nav.css'
 
 class Nav extends Component {
-    state = {  }
-    render() { 
+    render() {
         return (
             <div className="headingDiv">
                 <h1 className="headingTitle">Three Angels Painting</h1>
                 <h3>Jose Rizek</h3>
+                {/* <select>
+                    <option>About</option>
+                    <option>Photos</option>
+                    <option>Contact</option>
+                
+                </select> */}
+
                 <nav className="navDiv">
                     <h4 className="navItem">About</h4>
                     <h4 className="navItem">photos</h4>
@@ -15,8 +21,8 @@ class Nav extends Component {
                 </nav>
             </div>
 
-          );
+        );
     }
 }
- 
+
 export default Nav;
