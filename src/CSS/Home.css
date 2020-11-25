@@ -2,3 +2,11 @@
     height: 400px;
     width: 500px;
 }
+
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+
+.carousel-div{
+    margin: 50px 40px;
+}

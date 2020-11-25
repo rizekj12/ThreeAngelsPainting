@@ -3,6 +3,7 @@ import { Component } from 'react'
 import Nav from './Nav'
 import Carousel from "react-elastic-carousel"
 import '../CSS/Home.css'
+import Grid from "./Grid"
 
 const imgURLs = [
     { url: 'https://i.ibb.co/GpJ6NQ5/20200730-091756.jpg' },
@@ -32,12 +33,16 @@ class Home extends Component {
         return (
             <div>
                 <Nav />
-
-                <Carousel>
+                <div className="carousel-div">
+                <Carousel 
+                className="rec"
+                enableAutoPlay autoPlaySpeed={2500}>
                     {items.map(item => <div key={item.id}>
                     <img className="carousel-img" src={item.url} alt={item.title}/>
                     </div>)}
-                </Carousel>
+                </Carousel> 
+                <Grid/>
+                </div>
             </div>
         )
     }
