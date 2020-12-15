@@ -1,0 +1,43 @@
+@import "./variables";
+
+.headerDiv{
+    background-image: url("../images/header-image.jpeg");
+    height: 590px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+}
+
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    color: $baseWhite;
+}
+
+.quoteDiv{
+    background-color: $primaryOrange;
+    color:white;
+    height: 40px;
+    width: 203px;
+    font-size: 25px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainTitle{
+    font-size: 60px;
+    text-align: center;
+    color: $baseWhite;
+    margin: -24px;
+    margin-bottom: auto;
+}

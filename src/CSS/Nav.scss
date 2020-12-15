@@ -1,19 +1,46 @@
+@import "./variables";
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
 .headingTitle{
+    color: $primaryOrange;
     text-align: center;
+    font-family: 'Gemunu Libre ExtraBold', sans-serif;
+    width: 330px;
+    height: 44px;
+    left: 77px;
+    top: 40px;
 }
 
 .headingDiv{
+    @include flexRow();
     text-align:center;
-    background-color:skyblue;
+    background-color:$baseWhite;
+    height: 75px;
 }
 
-.navDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+.navLinks{
+    @include flexRow();
+    position: absolute;
+    text-align: center;
+    left: 890px;
+    height: 48.61px;
+    top: 32px;
 }
 
-.navItem{
-    margin: 20px;
+.linkText{
+    font-size: 25px;
+    font-weight: 600;
+    margin: -9px 30px;
+}
+
+.quoteText{
+    position: absolute;
+    border: 1.5px solid black;
+    top:-4px;
+    left:-175px;
+    padding: 5px 20px;
+    padding-top: 2px;
 }
