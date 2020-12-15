@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 
-class Carousel extends Component {
-    state = {  }
-    render() { 
+const Carousel = () => {
+    
         return ( 
             <div>
                 
             </div>
          );
-    }
+    
 }
  
 export default Carousel;
