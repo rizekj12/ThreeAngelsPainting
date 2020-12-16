@@ -3,10 +3,51 @@
     height:650px;
     width:650px; 
 }
+@mixin secondSizing(){
+    height: 625px;
+    width: 730px; 
+}
 
 .serviceTopicDiv{
     display: flex;
     flex-direction: row;
+    margin-bottom: 200px;
+
+}
+
+
+.serviceImg{
+    @include sizing();
+}
+
+.interiorImg{
+    @include secondSizing();
+}
+
+.flooringImg{
+    @include secondSizing();
+}
+
+.pressureImg{
+    height:685px;
+}  
+
+.serviceQuoteBtn{
+    background-color: $primaryOrange;
+    color: white;
+    border-style: none;
+    font-weight: 700;
+    height: 50px;
+    width: 140px;
+}
+
+.textsDiv{
+    width: 230px;
+    margin: 80px;
+    .servicePara{
+        font-weight:600;
+        line-height: 20px;
+    }
 }
 
 .rightFacing{
@@ -14,20 +55,7 @@
     flex-direction: row-reverse;
 }
 
-.serviceImg{
-    @include sizing();
+.pressure2{
+    margin-bottom:100px;
 }
 
-.interiorImg{
-    height: 625px;
-    width: 730px;
-}
-
-.flooringImg{
-    height: 625px;
-    width: 730px;
-}
-
-.pressureImg{
-    height:685px;
-}

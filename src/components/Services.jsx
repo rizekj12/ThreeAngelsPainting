@@ -10,11 +10,11 @@ const Services = (props) => {
     return (
         <section id="services">
         <div className="servicesDiv">
-            <h1>Services</h1>
+            <h1 className="title">OUR SERVICES</h1>
             <ServiceTopic 
                 image={interior} 
                 topic="Interior Remodeling" 
-                paragraph="Looking to remodel your bathroom or kitchen? We will use great attention to detail to bring your vision to life with"
+                paragraph="Looking to remodel your bathroom or kitchen? We will use great attention to detail to bring your vision to life with."
                 customStyle="interiorImg"
             />
             <ServiceTopic 
@@ -35,6 +35,7 @@ const Services = (props) => {
                 topic="Presurre Washing" 
                 paragraph="Pressure washing is a lot of work for a job that sometimes just needs to be done and we can help with that."
                 customStyle="pressureImg"
+                customStyle2="pressure2"
                 side="rightFacing"
                 />
         </div>

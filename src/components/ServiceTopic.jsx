@@ -3,11 +3,12 @@ import "../CSS/ServiceTopic.scss";
 
 const ServiceTopic = (props) => {
   return (
-    <div className={`${props.side} serviceTopicDiv`}>
+    <div className={` ${props.customStyle2} ${props.side} serviceTopicDiv`}>
       <img className={`serviceImg ${props.customStyle}`} src={props.image} alt={`${props.topic} image`} />
-      <div>
+      <div className="textsDiv">
         <h3>{props.topic}</h3>
-        <p>{props.paragraph}</p>
+        <p className="servicePara">{props.paragraph}</p>
+        <button className="serviceQuoteBtn">REQUEST QUOTE</button>
       </div>
     </div>
   );
