@@ -16,6 +16,7 @@
 
 .headingDiv{
     @include flexRow();
+    z-index:1;
     text-align:center;
     background-color:$baseWhite;
     height: 75px;
@@ -27,15 +28,18 @@
     @include flexRow();
     position: absolute;
     text-align: center;
-    left: 890px;
+    left: 830px;
     height: 48.61px;
     top: 32px;
 }
 
 .linkText{
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 600;
-    margin: -9px 30px;
+    margin: -9px 38px;
+    &:hover{
+        color: $primaryOrange;  
+    }
 }
 
 .quoteText{
@@ -45,4 +49,15 @@
     left:-175px;
     padding: 5px 20px;
     padding-top: 2px;
+    &:hover{
+        border: 1.5px solid $primaryOrange;   
+    }
+}
+
+.ourWorkTexts{
+    display: flex;
+    flex-direction: row;
+}
+.ourWork{
+    margin: 0px 3px;
 }
