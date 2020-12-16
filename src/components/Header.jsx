@@ -9,6 +9,9 @@ const Header = () => {
         <h2>High quality home remodeling. Affordable pricing.</h2>
       </div>
       <div className="quoteDiv">Request Quote</div>
+      <div className="weCare">
+          <span>WE CARE!</span>
+          Our Covid-19 practices include additional cleaning, disinfecting, wearing a mask and anything else upon request.</div>
     </div>
   );
 };
