@@ -1,6 +1,33 @@
 @import "./variables";
+@mixin sizing() {
+    height:650px;
+    width:650px; 
+}
+
+.serviceTopicDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.rightFacing{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 .serviceImg{
-    height:650px;
-    width:650px;
+    @include sizing();
+}
+
+.interiorImg{
+    height: 625px;
+    width: 730px;
+}
+
+.flooringImg{
+    height: 625px;
+    width: 730px;
+}
+
+.pressureImg{
+    height:685px;
 }

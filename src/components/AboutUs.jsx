@@ -2,9 +2,12 @@ import React from 'react';
 
 const AboutUs = () => {
     return ( 
-        <div>
-            <h1>About us</h1>
-        </div>
+        <section id="about-us">
+            <div>
+                <h1>About us</h1>
+            </div>
+        </section>
+        
      );
 }
  
