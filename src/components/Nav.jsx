@@ -11,7 +11,7 @@ const Nav = () => {
         <div className="navLinks">
             <Link className="quoteText linkText" to="quote" smooth={true} duration={1000}> Quote </Link>
             <Link className="linkText" to="services" smooth={true} duration={1000}> Services </Link>
-            <Link className="linkText" to="our-work" smooth={true} duration={1000}>
+            <Link className="linkText" to="our-work" smooth={true} duration={1500}>
                 <div className="ourWorkTexts">
                     <span className="ourWork">Our </span><span className="ourWork"> Work</span>
                 </div>

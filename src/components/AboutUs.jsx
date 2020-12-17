@@ -14,7 +14,7 @@ const AboutUs = () => {
                                     Three Angels Painting is a company started by Jose Rizek out of Franklin, North Carolina 
                                     with a goal of providing excellent flooring, interior remodeling, and painting services. 
                                     Jose has over 15 years of experience working in interior remodeling, painting, flooring, 
-                                    and other home improvement services. Over his years of experience, Jose has earned a great
+                                    and other home improvement services. Over his years of experience, Jose has earned an excellent
                                     reputation with clients as someone who truly cares about attention to detail in every home 
                                     improvement project he does. 
                                 </p>
