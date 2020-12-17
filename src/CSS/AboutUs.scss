@@ -1,1 +1,26 @@
 @import "./variables";
+
+.paragraphDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutUsPara{
+    font-weight:600;
+    line-height: 20px;
+}
+
+.para{
+    margin: 20px;
+}
+
+.innerParaDiv{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 30px;
+}
+
+.aboutUs{
+    margin-bottom:35px;
+}
