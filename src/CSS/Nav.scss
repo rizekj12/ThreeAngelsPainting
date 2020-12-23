@@ -6,12 +6,14 @@
 
 .headingTitle{
     color: $primaryOrange;
+    position: absolute;
+    font-size: 39px;
     text-align: center;
     font-family: 'Gemunu Libre ExtraBold', sans-serif;
     width: 330px;
-    height: 44px;
-    left: 77px;
-    top: 40px;
+    height: 64px;
+    left: 25px;
+    top: 7px;
 }
 
 .headingDiv{
@@ -19,7 +21,7 @@
     z-index:1;
     text-align:center;
     background-color:$baseWhite;
-    height: 75px;
+    height: 107px;
     width:100%;
     position: fixed;
 }
@@ -34,9 +36,9 @@
 }
 
 .linkText{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
-    margin: -9px 38px;
+    margin: -9px 30px;
     &:hover{
         color: $primaryOrange;  
     }
@@ -61,3 +63,29 @@
 .ourWork{
     margin: 0px 3px;
 }
+
+.phoneNumber{
+   margin-left: 10px;
+    font-size:22px;
+    
+}
+
+.phoneNumberDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    position: absolute;
+    right: 24px;
+    top: 45px;
+}
+
+.phone{
+    align-self: center;
+    font-size: 22px;
+    color: $primaryOrange;
+    margin-bottom: 18px;
+
+}
+
+

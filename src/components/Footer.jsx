@@ -7,7 +7,6 @@ const Footer = () => {
       <div>
         <div className='footer'>
           <h3>Three Angels Painting </h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
           <h5>&#169; 2020 All Rights Reserved.</h5>
         </div>
         <div className='contact'>
