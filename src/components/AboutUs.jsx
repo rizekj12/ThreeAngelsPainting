@@ -31,6 +31,11 @@ const AboutUs = () => {
                                     you satisfied with all your home improvement projects.  
                                 </p>
                             </div>
+                            {/* <div className="aboutUsContact">
+                            <p>Email: jrrizek@gmail.com</p>
+                            <p>Phone: 828-332-1311</p>
+                            </div> */}
+                
                         </div>
                     </div>
             </section>
