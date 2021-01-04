@@ -6,7 +6,7 @@ const Footer = () => {
     <section className='boarder'>
       <div>
         <div className='footer'>
-          <h3>Three Angels Painting </h3>
+          <h3 className="footerTitle">Three Angels Painting </h3>
           <h5>&#169; 2020 All Rights Reserved.</h5>
         </div>
         <div className='contact'>
