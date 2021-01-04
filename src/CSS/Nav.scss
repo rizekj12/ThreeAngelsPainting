@@ -13,7 +13,7 @@
     width: 330px;
     height: 64px;
     left: 25px;
-    top: 7px;
+    top: 25px;
 }
 
 .headingDiv{
@@ -36,6 +36,7 @@
 }
 
 .linkText{
+    color: black;
     font-size: 22px;
     font-weight: 600;
     margin: -9px 30px;
@@ -64,8 +65,9 @@
     margin: 0px 3px;
 }
 
-.phoneNumber{
+.phoneNumber{ 
    margin-left: 10px;
+   margin-top: 20px;
     font-size:22px;
     
 }
