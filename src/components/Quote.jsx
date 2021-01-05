@@ -1,66 +1,58 @@
 import React from 'react';
 import "../CSS/Quote.scss"
-
-import { Form, Button, Col} from 'react-bootstrap'
-
-
+import { Form, Col } from 'react-bootstrap'
 
 const Quote = () => {
   return (
-    <section id="quote">
+    <section className="quoteSect" id="quote">
       <div>
         <h1 className="title">REQUEST A QUOTE</h1>
+        <div className="messageDiv">
+        <p>Call us at <span> 828-332-1311</span> or fill out the form below and we will contact you</p>
+        <p className="p2" >Fields marked with an asterisk (*) are required.</p>
+        </div>
 
-        <Form>
+
+        <Form className="quoteForm">
   <Form.Row>
     <Form.Group as={Col} controlId="formGridEmail">
-      <Form.Label>Email</Form.Label>
-      <Form.Control type="email" placeholder="Enter email" />
+      <Form.Label className="inputLabel">First Name*</Form.Label>
+      <input className="formInput" type="text" />
     </Form.Group>
 
     <Form.Group as={Col} controlId="formGridPassword">
-      <Form.Label>Password</Form.Label>
-      <Form.Control type="password" placeholder="Password" />
+      <Form.Label className="inputLabel">Last Name*</Form.Label>
+      <input className="formInput" type="text" />
     </Form.Group>
   </Form.Row>
-
-  <Form.Group controlId="formGridAddress1">
-    <Form.Label>Address</Form.Label>
-    <Form.Control placeholder="1234 Main St" />
-  </Form.Group>
-
-  <Form.Group controlId="formGridAddress2">
-    <Form.Label>Address 2</Form.Label>
-    <Form.Control placeholder="Apartment, studio, or floor" />
-  </Form.Group>
 
   <Form.Row>
-    <Form.Group as={Col} controlId="formGridCity">
-      <Form.Label>City</Form.Label>
-      <Form.Control />
+    <Form.Group as={Col} controlId="formGridEmail">
+      <Form.Label className="inputLabel">Email*</Form.Label>
+      <input className="formInput" type="email" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridState">
-      <Form.Label>State</Form.Label>
-      <Form.Control as="select" defaultValue="Choose...">
-        <option>Choose...</option>
-        <option>...</option>
-      </Form.Control>
-    </Form.Group>
-
-    <Form.Group as={Col} controlId="formGridZip">
-      <Form.Label>Zip</Form.Label>
-      <Form.Control />
+    <Form.Group as={Col} controlId="formGridPassword">
+      <Form.Label className="inputLabel">Phone Number</Form.Label>
+      <input className="formInput" type="text" />
     </Form.Group>
   </Form.Row>
 
-  <Form.Group id="formGridCheckbox">
-    <Form.Check type="checkbox" label="Check me out" />
+  <Form.Row>
+  <Form.Group className="subjectInput">
+      <Form.Label className="inputLabel">Subject*</Form.Label>
+      <input className="formInput" type="text" />
+    </Form.Group>
+  </Form.Row>
+  
+  <Form.Group controlId="exampleForm.ControlTextarea1">
+    <Form.Label className="inputLabel">Message*</Form.Label>
+    <textarea className="formTextArea formInput" as="textarea" rows={3} />
   </Form.Group>
-
-  <Button variant="primary" type="submit">
+  
+  <button className="quoteButton" type="submit">
     Submit
-  </Button>
+  </button>
 </Form>
         
       </div>
