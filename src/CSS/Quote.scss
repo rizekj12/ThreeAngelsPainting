@@ -1,0 +1,60 @@
+@import "./variables";
+
+
+.quoteSect{
+    width: 100%;
+}
+
+.quoteForm{
+    margin: auto 170px;
+}
+
+.subjectInput{
+    width: 49%;
+    margin: 5px;
+}
+
+.quoteButton{
+    height: 43px;
+    width: 93px;
+    background-color: $primaryOrange;
+    border-color: $primaryOrange;
+    border-style: solid;
+    color: white;
+}
+
+.inputLabel{
+    font-weight:bold ;
+}
+
+.formInput{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.formTextArea{
+    height: 100px;
+}
+
+.messageDiv{
+    margin: 37px 170px;
+    p{
+        margin: 2px;
+    }
+    .p2{
+        font-style: italic;
+    }
+    span{
+        font-weight: bold;
+    }
+}

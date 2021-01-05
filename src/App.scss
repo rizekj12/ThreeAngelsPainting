@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gemunu-libre');
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
 
 .App {
   text-align: center;
@@ -7,6 +8,7 @@
 }
 
 .title{
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
   margin: 100px;
   font-size: 30px;
