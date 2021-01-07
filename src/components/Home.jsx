@@ -9,8 +9,26 @@ import Testimonials from './Testimonials'
 import Footer from './Footer'
 import '../CSS/Home.scss'
 
-
 const Home = () => {
+
+    const [formInfo, setFormInfo] = useState({
+        firstName: '',
+        lastName: '',
+        eMail: '',
+        phoneNumber: '',
+        subject:'',
+        message: ''
+    })
+
+
+    const handleChange = (e) =>{
+        const {name, value} = e.target
+        setFormInfo((prevState) => ({
+                ...prevState,
+                [name]: value
+        }))
+    }
+
 
         return (
             <>
@@ -19,7 +37,7 @@ const Home = () => {
                 <Services />
                 <AboutUs />
                 <OurWork/>
-                <Quote/>
+                <Quote formInfo={formInfo} handleFormChange={handleChange}/>
                 <Testimonials/>
                 <Footer/>
             </>
