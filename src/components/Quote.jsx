@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/Quote.scss";
 import { Form, Col } from "react-bootstrap";
+import axios from 'axios'
 
 const Quote = (props) => {
+
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null
+  });
+
+  const handleServerResponse = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg }
+    });
+    if (ok) {
+      form.reset();
+    }
+  };
+
+  const handleOnSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    axios({
+      method: "post",
+      url: "https://formspree.io/f/mleoannk",
+      data: new FormData(form)
+    })
+      .then(r => {
+        handleServerResponse(true, "Thanks!", form);
+      })
+      .catch(r => {
+        handleServerResponse(false, r.response.data.error, form);
+      });
+  };
+
   return (
     <section className="quoteSect" id="quote">
       <div>
@@ -15,7 +49,7 @@ const Quote = (props) => {
           <p className="p2">Fields marked with an asterisk (*) are required.</p>
         </div>
 
-        <Form className="quoteForm">
+        <Form className="quoteForm" onSubmit={handleOnSubmit}>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label className="inputLabel">First Name*</Form.Label>
@@ -58,9 +92,16 @@ const Quote = (props) => {
             />
           </Form.Group>
 
-          <button className="quoteButton" type="submit">
+          <button className="quoteButton" type="submit" type="submit" disabled={serverState.submitting}>
             Submit
           </button>
+
+          {serverState.status && (
+          <p className={!serverState.status.ok ? "errorMsg" : ""}>
+            {serverState.status.msg}
+          </p>
+        )}
+
         </Form>
       </div>
     </section>

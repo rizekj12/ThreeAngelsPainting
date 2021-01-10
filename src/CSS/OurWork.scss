@@ -13,13 +13,27 @@
   height: 100%;
  }
  .slide {
- height: 70vh;
- object-fit: contain;
+ height: 540px;
+ width:90%;
  display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+
+  }
+
  }
+
+.slick-prev:before,
+.slick-next:before{
+  color: black;
+  width: 50px;
+  height: 50%;
+}
  
  .slider--image {
   border-radius: 5px;
