@@ -20,6 +20,10 @@ const Home = () => {
         message: ''
     })
 
+    const [ourWorkImages, setOurWorkImages] = useState([
+        
+    ])
+
 
     const handleChange = (e) =>{
         const {name, value} = e.target
