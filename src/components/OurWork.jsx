@@ -31,9 +31,9 @@ const OurWork = () => {
 
   return (
     <section id="our-work">
-      <div>
-        <h2 className="ourwork">OUR WORK</h2>
-        <Slider {...settings}>
+      <div className="carouselDiv">
+        <h2 className="ourwork title">OUR WORK</h2>
+        <Slider className="sliderDiv" {...settings}>
           {imgs.map(pic => (
             <div>
               <img className="slide" src={pic} alt=""/>

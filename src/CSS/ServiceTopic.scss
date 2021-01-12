@@ -38,7 +38,7 @@
     border-style: none;
     font-weight: 700;
     height: 50px;
-    width: 140px;
+    width: 150px;
 }
 
 .textsDiv{
@@ -57,5 +57,41 @@
 
 .pressure2{
     margin-bottom:100px;
+}
+
+@media (max-width: 425px){
+    .interiorImg{
+        height:425px;
+        width: 630px;
+    }
+
+    .rightFacing{
+        width: 232%;
+    }
+
+    .serviceImg{
+        height: 530px;
+        width: 550px;
+    }
+
+    .textsDiv{
+        width: 250px;
+        h3{
+            font-size: 35px;
+        }
+
+        .servicePara{
+            font-weight:600;
+            line-height: 33px;
+            width: 233px;
+            font-size: 24px;
+        }
+    }
+
+    .serviceQuoteBtn{
+        font-size: 22px;
+        height: 67px;
+        width: 200px;
+    }
 }
 

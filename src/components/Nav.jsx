@@ -18,7 +18,6 @@ const Nav = () => {
                     <span className="ourWork">Our </span><span className="ourWork"> Work</span>
                 </div>
             </Link>  
-            <Link className="linkText" to="testimonials" smooth={true} duration={1000}> Testimonials </Link>
             <Link className="linkText" to="about-us" smooth={true} duration={1000}> About </Link>
       </div>
       <div className="phoneNumberDiv">

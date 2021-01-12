@@ -1,6 +1,6 @@
 import React from 'react';
 import "../CSS/AboutUs.scss"
-import joseRizek from "../images/JoseRizek.jpeg"
+import companyTruck from '../images/companyTruck.jpg'
 
 const AboutUs = () => {
     return ( 
@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div>
                 <h1 className="aboutUs title">ABOUT US</h1>
                     <div className="paragraphDiv">
-                        <img src={joseRizek} alt="Jose Rizek"/>
+                        <img src={companyTruck} alt="Jose Rizek"/>
                             <div className="innerParaDiv">
                                 <p className="aboutUsPara">
                                     Three Angels Painting is a company started by Jose Rizek out of Franklin, North Carolina 

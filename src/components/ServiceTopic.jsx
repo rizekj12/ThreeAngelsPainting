@@ -8,7 +8,7 @@ const ServiceTopic = (props) => {
       <img
         className={`serviceImg ${props.customStyle}`}
         src={props.image}
-        alt={`${props.topic} image`}
+        alt={props.topic}
       />
       <div className="textsDiv">
         <h3>{props.topic}</h3>

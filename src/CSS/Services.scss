@@ -1,5 +1,11 @@
 @import "./variables";
 
 .servicesDiv{
-    margin-top: 140px;
+    margin-top: 280px;
+}
+
+@media (max-width: 425px){
+    .servicesDiv{
+        margin-bottom:10px;
+    }
 }

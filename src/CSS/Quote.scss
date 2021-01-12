@@ -3,6 +3,8 @@
 
 .quoteSect{
     width: 100%;
+    margin-bottom: 200px;
+    margin-top: 300px;
 }
 
 .quoteForm{
@@ -56,5 +58,24 @@
     }
     span{
         font-weight: bold;
+    }
+}
+
+@media (max-width: 425px){
+
+    .quoteDivOriginal{
+        margin-top: 200px;
+    }
+
+    .rQuote{
+        margin-right: -460px;
+    }
+
+    .messageDiv{
+        width: 568px;
+    }
+
+    .quoteForm{
+        width: 600px;
     }
 }

@@ -57,3 +57,25 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 425px){
+
+.headerDiv{
+    background-attachment: unset;
+    width: 231%;
+}
+
+.titleDiv{
+    padding: 60px;
+}
+
+.weCare{
+    width: 220%;
+    height: 59px;
+    top: 659px;
+    font-size: 17px;
+    left:12px;
+}
+
+
+}

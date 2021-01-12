@@ -30,7 +30,7 @@
     @include flexRow();
     position: absolute;
     text-align: center;
-    left: 830px;
+    left: 1015px;
     height: 48.61px;
     top: 32px;
 }
@@ -41,7 +41,9 @@
     font-weight: 600;
     margin: -9px 30px;
     &:hover{
-        color: $primaryOrange;  
+        color: $primaryOrange;
+        text-decoration: none;
+        cursor: pointer;  
 
     }
 }
@@ -78,7 +80,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-   
     position: absolute;
     right: 24px;
     top: 45px;
@@ -92,4 +93,37 @@
 
 }
 
+@media (max-width: 425px){
+    .navLinks{
+        @include flexRow();
+        position: relative;
+        text-align: center;
+        left: 0px;
+        height: 48.61px;
+        top: 32px;
+    }
+    .headingDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 14%;
+    }
+    .headingTitle{
+        position: relative;
+        left: 0px;
+    }
+    .phoneNumberDiv{
+        position: relative;
+        top: 17px;
+    }
 
+    .quoteText{
+        position: relative;
+        left:0px;
+        height: 39px;
+    }
+    .linkText{
+        margin: -7px 41px;
+    }
+}

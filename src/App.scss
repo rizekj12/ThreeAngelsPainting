@@ -14,4 +14,19 @@
   font-size: 30px;
 }
 
+@media (max-width: 425px){
+  .title{
+    margin: 80px;
+  }
+
+  .App{
+    width: 100%;
+  }
+
+  .servicesTitle{
+    position: absolute;
+    top:807px;
+    right:-62%;
+  }
+}
 

@@ -1,7 +1,5 @@
 .slick-slider {
-  max-width: 85vw;
   margin: 0 auto;
-  padding-top: 4em;
  
   @media only screen and (min-width: 1300px){
    max-width: 1013px;
@@ -52,3 +50,29 @@
     font-size: 30px
 
   }
+
+
+  @media (max-width: 425px){
+    .ourwork{
+      margin-right:-460px;
+    }
+ 
+ 
+    .carouselDiv{
+      width: 100%;
+    }
+
+    .sliderDiv{
+      margin-right: -460px;
+    }
+ 
+ 
+    .slick-slider{
+      right: -85px;
+      width: 192%;
+      padding-top: 0em;
+    }
+  }
+
+  
+
