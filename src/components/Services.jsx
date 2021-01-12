@@ -6,11 +6,11 @@ import flooring from "../images/flooring.jpeg"
 import pressure from "../images/pressure-washing.jpeg"
 import "../CSS/Services.scss"
 
-const Services = (props) => {
+const Services = () => {
     return (
         <section id="services">
         <div className="servicesDiv">
-            <h1 className="title">OUR SERVICES</h1>
+            <h1 className="title servicesTitle">OUR SERVICES</h1>
             <ServiceTopic 
                 image={interior} 
                 topic="Interior Remodeling" 

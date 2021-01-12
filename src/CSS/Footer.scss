@@ -36,3 +36,13 @@ $footerColor:#23242A;
     font-size: 12px;
   }
 }
+
+@media (max-width: 425px){
+  .boarder{
+    width: 100%;
+  }
+
+  .footer{
+    width: 970px;
+  }
+}

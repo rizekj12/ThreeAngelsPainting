@@ -20,11 +20,6 @@ const Home = () => {
         message: ''
     })
 
-    const [ourWorkImages, setOurWorkImages] = useState([
-        
-    ])
-
-
     const handleChange = (e) =>{
         const {name, value} = e.target
         setFormInfo((prevState) => ({
@@ -42,7 +37,7 @@ const Home = () => {
                 <AboutUs />
                 <OurWork/>
                 <Quote formInfo={formInfo} handleFormChange={handleChange}/>
-                <Testimonials/>
+                {/* <Testimonials/> */}
                 <Footer/>
             </>
         )

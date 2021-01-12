@@ -3,6 +3,9 @@
 .paragraphDiv{
     display: flex;
     flex-direction: row;
+    img{
+        height: 550px;
+    }
 }
 
 .aboutUsPara{
@@ -19,15 +22,37 @@
     flex-direction: column;
     width: 500px;
     margin-left: 30px;
+    justify-content: center;
 }
 
 .aboutUs{
+    margin-top: 280px;
     margin-bottom:100px;
 }
 
-// .aboutUsContact{
-//     position:absolute;
-//     font-weight:600;
-//     left: 20px;
-//     top: 4980px;
-// }
+@media (max-width: 425px){
+    .aboutUs{
+        margin-right: -460px;
+    }
+
+    .paragraphDiv{
+        display: flex;
+        flex-direction: column;
+        width:fit-content;
+        align-items: center;
+        margin: 10px 100px;
+
+        img{
+            margin-bottom: 55px;
+        }
+    }
+
+    .aboutUsPara{
+        font-size: 26px;
+        line-height: 38px;
+    }
+
+    .innerParaDiv{
+        width: 743px;
+    }
+}

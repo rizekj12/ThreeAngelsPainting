@@ -1,46 +1,45 @@
 import React, { useState } from "react";
 import "../CSS/Quote.scss";
 import { Form, Col } from "react-bootstrap";
-import axios from 'axios'
+import axios from "axios";
 
 const Quote = (props) => {
-
   const [serverState, setServerState] = useState({
     submitting: false,
-    status: null
+    status: null,
   });
 
   const handleServerResponse = (ok, msg, form) => {
     setServerState({
       submitting: false,
-      status: { ok, msg }
+      status: { ok, msg },
     });
     if (ok) {
       form.reset();
     }
   };
 
-  const handleOnSubmit = e => {
+  const handleOnSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     setServerState({ submitting: true });
     axios({
       method: "post",
       url: "https://formspree.io/f/mleoannk",
-      data: new FormData(form)
+      data: new FormData(form),
     })
-      .then(r => {
+      .then((r) => {
         handleServerResponse(true, "Thanks!", form);
       })
-      .catch(r => {
+      .catch((r) => {
         handleServerResponse(false, r.response.data.error, form);
       });
   };
 
   return (
     <section className="quoteSect" id="quote">
-      <div>
-        <h1 className="title">REQUEST A QUOTE</h1>
+      <div className="quoteDivOriginal">
+        <h1 className="title rQuote">REQUEST A QUOTE</h1>
         <div className="messageDiv">
           <p>
             Call us at <span> 828-332-1311</span> or fill out the form below and
@@ -53,31 +52,56 @@ const Quote = (props) => {
           <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label className="inputLabel">First Name*</Form.Label>
-              <input className="formInput" type="text" name="firstName" onChange={props.handleFormChange} />
+              <input
+                className="formInput"
+                type="text"
+                name="firstName"
+                onChange={props.handleFormChange}
+              />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label className="inputLabel">Last Name*</Form.Label>
-              <input className="formInput" type="text" name="lastName" onChange={props.handleFormChange} />
+              <input
+                className="formInput"
+                type="text"
+                name="lastName"
+                onChange={props.handleFormChange}
+              />
             </Form.Group>
           </Form.Row>
 
           <Form.Row>
             <Form.Group as={Col} controlId="formGridEmail">
               <Form.Label className="inputLabel">Email*</Form.Label>
-              <input className="formInput" type="email" name="eMail" onChange={props.handleFormChange}/>
+              <input
+                className="formInput"
+                type="email"
+                name="eMail"
+                onChange={props.handleFormChange}
+              />
             </Form.Group>
 
             <Form.Group as={Col} controlId="formGridPassword">
               <Form.Label className="inputLabel">Phone Number</Form.Label>
-              <input className="formInput" type="text" name="phoneNumber" onChange={props.handleFormChange} />
+              <input
+                className="formInput"
+                type="text"
+                name="phoneNumber"
+                onChange={props.handleFormChange}
+              />
             </Form.Group>
           </Form.Row>
 
           <Form.Row>
             <Form.Group className="subjectInput">
               <Form.Label className="inputLabel">Subject*</Form.Label>
-              <input className="formInput" type="text" name="subject" onChange={props.handleFormChange}/>
+              <input
+                className="formInput"
+                type="text"
+                name="subject"
+                onChange={props.handleFormChange}
+              />
             </Form.Group>
           </Form.Row>
 
@@ -92,16 +116,19 @@ const Quote = (props) => {
             />
           </Form.Group>
 
-          <button className="quoteButton" type="submit" type="submit" disabled={serverState.submitting}>
+          <button
+            className="quoteButton"
+            type="submit"
+            disabled={serverState.submitting}
+          >
             Submit
           </button>
 
           {serverState.status && (
-          <p className={!serverState.status.ok ? "errorMsg" : ""}>
-            {serverState.status.msg}
-          </p>
-        )}
-
+            <p className={!serverState.status.ok ? "errorMsg" : ""}>
+              {serverState.status.msg}
+            </p>
+          )}
         </Form>
       </div>
     </section>
