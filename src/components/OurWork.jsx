@@ -25,7 +25,7 @@ const OurWork = () => {
     adaptiveHeight: true,
     fade: true,
     arrows: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     className: 'slides'
   };
 
