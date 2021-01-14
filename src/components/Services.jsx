@@ -32,7 +32,7 @@ const Services = () => {
                 />
             <ServiceTopic 
                 image={pressure} 
-                topic="Presurre Washing" 
+                topic="Pressure Washing" 
                 paragraph="Pressure washing is a lot of work for a job that sometimes just needs to be done and we can help with that."
                 customStyle="pressureImg"
                 customStyle2="pressure2"

@@ -25,7 +25,7 @@ const Quote = (props) => {
     setServerState({ submitting: true });
     axios({
       method: "post",
-      url: "https://formspree.io/f/mleoannk",
+      url: "https://formspree.io/f/mknpkeqe",
       data: new FormData(form),
     })
       .then((r) => {
