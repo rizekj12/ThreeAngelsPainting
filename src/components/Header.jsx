@@ -13,11 +13,6 @@ const Header = () => {
         <Link to="quote" smooth={true} duration={1000}>
           <div className="quoteDiv">Request Quote</div>
         </Link>
-        <div className="weCare">
-          <span>WE CARE!</span>
-          Our Covid-19 practices include additional cleaning, disinfecting,
-          wearing a mask and anything else upon request.
-        </div>
       </div>
     </section>
   );
