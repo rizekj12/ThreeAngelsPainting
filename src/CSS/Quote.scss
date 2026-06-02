@@ -61,21 +61,34 @@
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 768px){
+
+    .quoteSect{
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
 
     .quoteDivOriginal{
-        margin-top: 200px;
+        margin-top: 40px;
+        padding: 0 16px;
     }
 
     .rQuote{
-        margin-right: -460px;
+        margin-right: 0;
+        text-align: center;
     }
 
     .messageDiv{
-        width: 568px;
+        margin: 20px 0;
+        width: 100%;
     }
 
     .quoteForm{
-        width: 600px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .subjectInput{
+        width: 100%;
     }
 }
